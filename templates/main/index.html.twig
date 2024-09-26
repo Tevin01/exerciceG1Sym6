@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} | {{ title }}{% endblock %}
+
+{% block header %}
+    <h1>{{ title }}</h1>
+    <p>{{ homepage_text }}</p>
+{% endblock %}

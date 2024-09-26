@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{# on surcharge le block parent #}
+{% block title %}{{ parent() }} | {{ title }}{% endblock %}
+
+
+{% block body %}
+    <div class="container">
+        <h1>{{ title }}</h1>
+{# inclusion depuis la racine du projet ! (templates) #}
+{% include 'main/menu.html.twig' %}
+    </div>
+
+{% endblock %}
