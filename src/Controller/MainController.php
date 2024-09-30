@@ -14,6 +14,7 @@ class MainController extends AbstractController
         return $this->render('main/index.html.twig', [
             'title' => 'Homepage',
             'homepage_text'=> "Nous somme le ".date('d/m/Y \à H:i'),
+            # WhatOnEarthIsTwigFor...
             
         ]);
     }
